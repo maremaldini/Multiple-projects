@@ -1,0 +1,13 @@
+h1 {
+    animation: wiggle 1s 1s 8 alternate-reverse;
+}
+
+@keyframes wiggle {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(20deg);
+    }
+}

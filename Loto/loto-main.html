@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Main/shared.css">
+    <link rel="stylesheet" href="loto-style.css">
+    <script src="loto-script.js" defer></script>
+    <title>Loto app</title>
+</head>
+<body>
+    <header>
+        <div class="home"><a href="../Main/index.html">Home</a></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </header>
+
+    <main>
+        <div class="main-menu">
+            <ul>
+                <li class="menu-title"><div>My applications</div></li>
+                <li class="list-item"><div><a href="">My CV</a></div></li>
+                <li class="list-item"><div><a href="">MMA & Box diplomas</a></div></li>
+                <li class="list-item"><div><a href="../Calculator/calculator-index.html">Calculator</a></div></li>
+                <li class="list-item"><div><a href="../Password generator/password-generator-index.html">Password generator</a></div></li>
+                <li class="list-item"><div><a href="../Currency convertor/currency-index.html">Currnecy converter</a></div></li>
+                <li class="list-item"><div><a href="../Guess my number/guess-index.html">Guess my number</a></div></li>
+                <li class="list-item"><div><a href="loto-main.html">Loto</a></div></li>
+                <!---
+
+                <li class="list-item"><a href=""></a></li>
+                -->
+            </ul>
+        </div>
+
+        <div class="content">
+
+            <div class="container">
+                <h1>Welcome to the Loto app</h1>
+
+                <div>
+                    <label for="lucky-range">Please select the range for the lucky numbers: </label>
+                    <input id="lucky-range" type="number" min="1" max="100" value="6">
+                </div>
+
+                <div>
+                    <label for="possible-range">Please select the range for the possible numbers: </label>
+                    <input id="possible-range" type="number" min="1" max="999" value="49">
+                </div>
+
+                <div class="flex">
+                    <button class="submit">Give me the lucky numbers</button>
+                </div>
+
+                <div class="flex">
+                    <div class="result">
+
+                    </div>
+                </div>
+
+                
+                <div class="error">
+                    &nbsp;&nbsp;&nbsp;&nbsp;You must enter a lucky range smaller than the possible range!
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

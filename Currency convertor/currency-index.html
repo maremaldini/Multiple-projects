@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Main/shared.css">
+    <link rel="stylesheet" href="currency-style.css">
+    <script src="currency-script.js" defer></script>
+    <title>Currency convertor</title>
+</head>
+<body>
+    <header>
+        <div class="home"><a href="../Main/index.html">Home</a></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </header>
+
+    <main>
+        <div class="main-menu">
+            <ul>
+                <li class="menu-title"><div>My applications</div></li>
+                <li class="list-item"><div><a href="">My CV</a></div></li>
+                <li class="list-item"><div><a href="">MMA & Box diplomas</a></div></li>
+                <li class="list-item"><div><a href="../Calculator/calculator-index.html">Calculator</a></div></li>
+                <li class="list-item"><div><a href="../Password generator/password-generator-index.html">Password generator</a></div></li>
+                <li class="list-item"><div><a href="currency-index.html">Currnecy converter</a></div></li>
+                <li class="list-item"><div><a href="../Guess my number/guess-index.html">Guess my number</a></div></li>
+                <li class="list-item"><div><a href="../Loto/loto-main.html">Loto</a></div></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div>
+                    <h1>Currency conversion</h1>
+                </div>
+                
+                <div>
+                    <p>Introduce your amount: </p>
+                </div>
+        
+                <div>
+                    <textarea rows = "1" class="amount-text"></textarea>
+                </div>
+        
+                <div>
+                    <label for="money-type"></label>
+                        <select name="money-type" id="money-type">
+                        <option value="non-value">--Choose currency--</option>
+                        <option value="lions">Lions (Lei)</option>
+                        <option value="dollars">Dollars ($)</option>
+                        <option value="euros">Euros (€)</option>
+                        <option value="pounds">Pounds (GBP)</option>
+                        <option value="forints">Forints (HUF)</option>
+                    </select>
+                </div>
+        
+                <div>
+                    <button class="submit">Verify</button> 
+                </div>
+        
+                <div class="results">
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,81 @@
+.calculator {
+    display: grid;
+    background-color: rgba(0,255,255,0.3);
+    grid-template-columns: repeat(4, 50px);
+    height: auto;
+    grid-template-rows: minmax(100px, auto) repeat(6, 50px);
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    margin: 50px 0;
+    opacity: 0;
+    transform: translateY(-4rem);
+    transition: opacity 1s ease-out 1s transform 1s ease-out 1s;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.output {
+    grid-column: 1 / -1;
+    word-wrap: break-word;
+    word-break: break-all;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.previous-number {
+    min-height: 50px;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    margin-right: 5px;
+    max-height: auto;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.current-number {
+    font-size: 2.5rem;
+    margin-right: 5px;
+    min-height: 50px;
+    max-height: auto;
+    color:white;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+button {
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    margin: 2px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+button:hover {
+    background: rgba(255,255,255,09);
+}
+
+.luca {
+    font-size: 10rem;
+    color: red;
+}
+
+.message {
+    width: 200px;
+    background: rgba(255,255,255,1);
+    height: auto;
+    min-height: 50px;
+    position: absolute;
+    left: 250px;
+    top: 30px;
+    border-radius: 5px;
+    color:rgba(255,0,0,1);
+    padding: 5px;
+    display: none;
+}
